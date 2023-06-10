@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cda4e3eb33.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .font {
+      font-family: Be Vietnam Pro, sans-serif;
+    }
+    body {
+      margin:0;
+      padding:0;
+      font-size: 16px;
+    }
+    * {
+      margin:0;
+      padding:0;
+    }
+    
+  </style>
+</head>
+<body class="font">
+
+  <div class="header bg-white mx-auto h-screen max-w-screen-2xl" style="background-image: url('images/bg-tablet-pattern.svg');background-repeat:no-repeat;background-position:top right;">
+    <nav class="flex items-center justify-between py-16">
+      <img src="images/logo.svg" alt="">
+      <ul class="flex space-x-16 max-md:hidden block">
+        <a class="text-blue-950 hover:text-gray-300 font" href="#"><li>Pricing</li></a>
+        <a class="text-blue-950 hover:text-gray-300 font" href="#"><li>Product</li></a>
+        <a class="text-blue-950 hover:text-gray-300 font" href="#"><li>About Us</li></a>
+        <a class="text-blue-950 hover:text-gray-300 font" href="#"><li>Careers</li></a>
+        <a class="text-blue-950 hover:text-gray-300 font" href="#"><li>Community</li></a>
+        
+      </ul>
+      <button class="max-md:hidden font bg-orange-600 py-2 px-9 rounded-3xl text-white shadow-md shadow-orange-200 hover:opacity-50">Get Started</button>
+
+      <img src="images/icon-hamburger.svg" alt="" class="ham max-md:block md:hidden max-md:pr-10">
+    </nav>
+
+    <div class="header-content flex justify-between pt-16 max-md:flex-col-reverse">
+      <div class="header-titles max-md:flex-col max-w-lg">
+        <h1 class="max-md:text-center font font-bold text-5xl text-blue-950 leading-tight pb-14">Bring everyone together to build better products.</h1>
+        <p class="max-md:text-center max-w-sm text-gray-400 leading-normal pb-16">Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+        <a class="font bg-orange-600 py-2 px-9 rounded-3xl text-white shadow-md shadow-orange-200 hover:opacity-50" href="#">Get Started</a>
+      </div>
+      <img src="images/illustration-intro.svg" alt="" class="w-2/4 max-md:w-3/4">
+    </div>
+  </div>
+
+  <main class="bg-white mx-auto max-md:flex-col max-w-screen-2xl flex justify-between pb-32" style="background-image: url('images/bg-tablet-pattern.svg');background-repeat:no-repeat;background-position:bottom left;">
+    <div class="manage-title max-md:text-center max-md:pb-7 max-w-md">
+      <h3 class="text-blue-950 font-bold font text-4xl pb-12">What's different about Manage?</h3>
+      <p class="max-w-xs text-gray-400 leading-normal">Manage provides all the functionality your team needs, without 
+        the complexity. Our software is tailor-made for modern digital 
+        product teams. </p>
+    </div>
+    <div class="features flex flex-col">
+      <div class="feature flex max-w-2xl pb-9">
+        <h5 class="mr-12 px-3 py-1 bg-orange-600 rounded-2xl text-white">01</h5>
+        <div class="text">
+          <h4 class="text-blue-950 font font-bold pb-4">Track company-wide progress</h4>
+          <p class="text-gray-400 leading-normal">See how your day-to-day tasks fit into the wider vision. Go from 
+            tracking progress at the milestone level all the way done to the 
+            smallest of details. Never lose sight of the bigger picture again.</p>
+        </div>
+      </div>
+      <div class="feature flex max-w-2xl pb-9">
+        <span class="mr-12 px-3 py-1 bg-orange-600 rounded-2xl text-white">02</span>
+        <div class="text">
+          <h4 class="text-blue-950 font font-bold pb-4">Advanced built-in reports</h4>
+          <p class="text-gray-400 leading-normal">Set internal delivery estimates and track progress toward company 
+            goals. Our customisable dashboard helps you build out the reports 
+            you need to keep key stakeholders informed.</p>
+        </div>
+      </div>
+      <div class="feature flex max-w-2xl">
+        <span class="mr-12 px-3 py-1 bg-orange-600 rounded-2xl text-white">03</span>
+        <div class="text">
+          <h4 class="text-blue-950 font font-bold pb-4">Everything you need in one place</h4>
+          <p class="text-gray-400 leading-normal">Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.</p>
+        </div>
+      </div>
+      
+    </div>
+
+  </main>
+
+  <section class="reviews bg-white mx-auto max-w-screen-2xl pt-48 pb-64">
+    <h4 class="text-blue-950 font-bold font text-4xl text-center">What they've said</h4>
+    <div class="reviews-2 flex max-md:flex-col max-md:items-center justify-between gap-3 pt-28">
+      <div class="review max-w-md bg-gray-100 relative">
+        <img class="absolute w-20 left-48 -top-10" src="images/avatar-anisha.png" alt="">
+
+        <h5 class="text-center pt-16 text-blue-950">Anisha Li</h5>
+        <p class="text-center pt-9 text-gray-400">“Manage has supercharged our team's workflow. The ability to maintain 
+          visibility on larger milestones at all times keeps everyone motivated.”</p>
+      </div>
+      <div class="review max-w-md bg-gray-100 relative">
+        <img class="absolute w-20 left-48 -top-10" src="images/avatar-ali.png" alt="">
+        <h5 class="text-center pt-16 text-blue-950">Ali Bravo</h5>
+        <p class="text-center pt-9 text-gray-400"> “We have been able to cancel so many other subscriptions since using 
+          Manage. There is no more cross-channel confusion and everyone is much 
+          more focused.”</p>
+      </div>
+      <div class="review max-w-md bg-gray-100 relative">
+        <img class="absolute w-20 left-48 -top-10" src="images/avatar-richard.png" alt="">
+        <h5 class="text-center pt-16 text-blue-950">Richard Watts</h5>
+        <p class="text-center pt-9 text-gray-400">“Manage allows us to provide structure and process. It keeps us organized 
+          and focused. I can't stop recommending them to everyone I talk to!”</p>
+      </div>
+    </div>
+    <div class="button flex justify-center pt-16">
+      <button class="font  bg-orange-600 py-2 px-9 rounded-3xl text-white shadow-md shadow-orange-200 hover:opacity-50">Get Started</button>
+
+    </div>
+    
+  </section>
+
+  <section class="orange bg-orange-600 py-20">
+    <div class="mx-auto max-w-screen-2xl flex max-md:flex-col max-md:items-center justify-between ">
+      <h6 class="text-white text-4xl max-md:text-center max-md:pb-7 font-bold">Simplify how your team <br>works today.</h6>
+      <div class="button-2">
+        <button class="font  bg-white py-2 px-9 rounded-3xl text-orange-600  hover:opacity-50">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-950">
+    <div class="mx-auto max-w-screen-2xl py-28 flex max-md:flex-col-reverse justify-between">
+      <div class="logo-and-social flex flex-col justify-around gap-16 max-md:flex-col-reverse max-md:items-center">
+        <img class="w-28" src="images/logo.svg" alt="">
+        <div class="social-icons text-white space-x-3">
+          <a class="text-2xl hover:text-orange-600" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a class="text-2xl hover:text-orange-600" href="#"><i class="fa-brands fa-square-youtube"></i></a>
+          <a class="text-2xl hover:text-orange-600" href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a class="text-2xl hover:text-orange-600" href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a class="text-2xl hover:text-orange-600" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="max-md:flex gap-12 md:flex max-md:justify-center max-md:pb-8 md:gap-64">
+        <ul class="text-white flex flex-col gap-4">
+          <a class="hover:text-orange-600" href="#"><li>Home</li></a>
+          <a class="hover:text-orange-600" href="#"><li>Pricing</li></a>
+          <a class="hover:text-orange-600" href="#"><li>Products</li></a>
+          <a class="hover:text-orange-600" href="#"><li>About Us</li></a>
+        </ul>
+  
+        <ul class="text-white flex flex-col gap-4 ">
+          <a class="hover:text-orange-600" href="#"><li>Careers</li></a>
+          <a class="hover:text-orange-600" href="#"><li>Community</li></a>
+          <a  class="hover:text-orange-600"href="#"><li>Privacy Policy</li></a>
+        </ul>
+      </div>
+      
+
+      <div class="input flex flex-col max-md:items-center max-md:pb-5 gap-16">
+        <form action="">
+          <input type="text" required placeholder="Updates in your inbox" class="rounded-2xl h-10 pl-3">
+          <button class="font  bg-orange-600 py-2 px-5 rounded-3xl text-white  hover:opacity-50">Go</button>
+        </form>
+        <h6 class="text-gray-300">Copyright 2020. All Rights Reserved</h6>
+      </div>
+
+
+    </div>
+    
+  </footer>
+
+</body>
+</html>
